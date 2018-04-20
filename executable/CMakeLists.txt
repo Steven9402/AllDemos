@@ -1,0 +1,8 @@
+add_executable(file_operator_ex file_operator_ex.cpp)
+target_link_libraries(file_operator_ex myfutils)
+
+add_executable(parameter_ex parameter_ex.cpp)
+target_link_libraries(parameter_ex parameter)
+
+add_executable(put_chinese_txt_ex put_chinese_txt_ex.cpp)
+target_link_libraries(put_chinese_txt_ex putchinesetext freetype ${OpenCV_LIBS})
