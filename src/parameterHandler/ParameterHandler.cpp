@@ -2,7 +2,7 @@
 // Created by cuizhou on 18-3-25.
 //
 
-#include "parameterHandler/ParameterHandler.h"
+#include "ParameterHandler.h"
 ParameterHandler::ParameterHandler(){
 
 }

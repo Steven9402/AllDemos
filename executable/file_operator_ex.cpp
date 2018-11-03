@@ -2,7 +2,7 @@
 // Created by cuizhou on 18-3-19.
 //
 #include <iostream>
-#include "myfUtils/FileOperator.h"
+#include "../src/myfUtils/FileOperator.h"
 
 
 using namespace std;

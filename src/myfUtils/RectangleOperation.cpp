@@ -2,7 +2,8 @@
 // Created by cuizhou on 18-2-25.
 //
 
-#include "myfUtils/RectangleOperation.h"
+#include <iostream>
+#include "RectangleOperation.h"
 namespace  myf {
 
     double calcIouRatio(const Rect &rect1, const Rect &rect2) {
@@ -85,6 +86,34 @@ namespace  myf {
         }else{
             cv::Rect tmp;
             return tmp;
+        }
+    }
+
+
+    bool comparison_area(Rect a,Rect b){
+        //>是降序
+        return a.area()>b.area();
+    }
+
+    void nms(vector<Rect>& rects,float thresh){
+        sort(rects.begin(),rects.end(),comparison_area);
+
+        if(rects.size()>1){
+            int ind_i=0;
+            int ind_j=1;
+
+            while(ind_i<rects.size()-1){
+                while(ind_j<rects.size()){
+                    float iou_ratio=myf::calcIouRatio(rects[ind_i],rects[ind_j]);
+                    if(iou_ratio>thresh){
+                        rects.erase(rects.begin()+ind_j);
+                        ind_j--;
+                    }
+                    ind_j++;
+                }
+                ind_i++;
+            }
+
         }
     }
 }

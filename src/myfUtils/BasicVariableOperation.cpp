@@ -2,7 +2,7 @@
 // Created by cuizhou on 18-4-5.
 //
 
-#include "myfUtils/BasicVariableOperation.h"
+#include "BasicVariableOperation.h"
 
 namespace myf{
     int GetIntVariableLength(const int tmp)

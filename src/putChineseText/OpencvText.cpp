@@ -2,7 +2,7 @@
 #include <assert.h>  
 #include <locale.h>  
 #include <ctype.h>  
-#include "putChineseText/OpencvText.h"
+#include "OpencvText.h"
 
 
 

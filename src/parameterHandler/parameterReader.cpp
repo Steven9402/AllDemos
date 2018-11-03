@@ -2,7 +2,7 @@
 // Created by kyxu on 17-9-2.
 //
 
-#include "parameterHandler/parameterReader.h"
+#include "parameterReader.h"
 using namespace std;
 
 parameterReader::parameterReader(std::string filename)

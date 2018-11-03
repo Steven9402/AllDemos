@@ -20,6 +20,8 @@ namespace myf{
 
     cv::Rect getSafeROI(int x1,int y1,int x2,int y2,int rows,int cols);
 
+    void nms(vector<Rect>& rects,float thresh=0.7);
+
 }
 
 
